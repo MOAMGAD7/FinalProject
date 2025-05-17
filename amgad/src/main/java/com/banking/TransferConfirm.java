@@ -36,6 +36,7 @@ public class TransferConfirm {
     public Label lb3;
     @FXML
     Label TransToCn;
+
     @FXML
     private Button exportReportButton; // زر جديد لتصدير التقرير
     String str1, str2, str3;
@@ -44,6 +45,7 @@ public class TransferConfirm {
         TransToCn.setText(s1);
         AmCn.setText(s2);
         AmFeCn.setText(s3);
+
         if (s4.equals("Transfer")) {
             this.str1 = s1;
             this.str2 = s3;
@@ -105,6 +107,16 @@ public class TransferConfirm {
             this.str2 = s3;
             this.str3 = s4;
         }
+        else if (s4.equals("Deposit")) {
+            Lb1.setText("Type:");
+            Lb2.setText("Amount:");
+            lb3.setText("Amount with Fees:");
+            this.str1 = s1;
+            this.str2 = s3;
+            this.str3 = s1;
+        }
+
+
     }
 
     public void Clicking3(ActionEvent actionEvent) {

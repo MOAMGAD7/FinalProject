@@ -48,7 +48,7 @@
                         </HBox>
                         <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="213.0" spacing="12" styleClass="menu-item">
                             <FontAwesomeIconView fx:id="exchangeIcon" fill="WHITE" glyphName="EXCHANGE" size="24" />
-                            <Label fx:id="exchangeLabel" text="Transactions" textFill="WHITE">
+                            <Label fx:id="exchangeLabel" onMouseClicked="#ToDepositeWithDraw" text="Transactions" textFill="WHITE">
                                 <font>
                                     <Font name="System Regular" size="16.0" />
                                 </font>
@@ -276,7 +276,7 @@
                                             <Insets top="30.0" />
                                         </VBox.margin>
                                         <children>
-                                            <VBox prefHeight="122.0" prefWidth="207.0" HBox.hgrow="ALWAYS">
+                                            <VBox prefHeight="152.0" prefWidth="218.0" HBox.hgrow="ALWAYS">
                                                 <children>
                                                     <Label prefHeight="28.0" prefWidth="185.0" text="Total Card Balance" textAlignment="CENTER" textFill="#fcfcfc">
                                                         <VBox.margin>
@@ -285,8 +285,11 @@
                                                         <font>
                                                             <Font name="Calibri Bold" size="18.0" />
                                                         </font>
+                                          <padding>
+                                             <Insets left="8.0" />
+                                          </padding>
                                                     </Label>
-                                                    <Label fx:id="cardbalance" prefHeight="34.0" prefWidth="96.0" text="\$100,00" textFill="#fcfcfc">
+                                                    <Label fx:id="cardbalance" prefHeight="34.0" prefWidth="182.0" text="\$100,00" textFill="#fcfcfc">
                                                         <VBox.margin>
                                                             <Insets left="40.0" />
                                                         </VBox.margin>
